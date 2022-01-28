@@ -60,15 +60,15 @@ weights = [0,13,-4]
 params = [[1,x,x**2] for x in X]
 alpha = 0.01
 
-print(costFunction(weights,params,y)) #initial cost function   
-print(weights)
+print("Initial Cost Function:",costFunction(weights,params,y)) #initial cost function   
+print("Initial Weights:",weights)
 
 # Altering the value of alpha and checking different values of cost function alongwith plotting J vs Iterations
-print(plotter(X,params,y,[0,13,-4],50,0.5))
-print(plotter(X,params,y,[0,13,-4],50,0.1))
-print(plotter(X,params,y,[0,13,-4],50,0.05))
-print(plotter(X,params,y,[0,13,-4],50,0.01))
-print(plotter(X,params,y,[0,13,-4],50,0.001))
+print("J for alpha = 0.5:",plotter(X,params,y,[0,13,-4],50,0.5))
+print("J for alpha = 0.1:",plotter(X,params,y,[0,13,-4],50,0.1))
+print("J for alpha = 0.05:",plotter(X,params,y,[0,13,-4],50,0.05))
+print("J for alpha = 0.01:",plotter(X,params,y,[0,13,-4],50,0.01))
+print("J for alpha = 0.001:",plotter(X,params,y,[0,13,-4],50,0.001))
 
 #plotting predicted values alongwith original ones
 plt.figure()
